@@ -22,7 +22,7 @@
   <body class="shower list" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# foaf: http://xmlns.com/foaf/0.1/ owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# org: http://www.w3.org/ns/org# schema: http://schema.org/ cite: http://purl.org/spar/cito/" typeof="schema:PresentationDigitalDocument">
     <header class="caption">
       <div class="title">
-        <h1 property="schema:name">The Adventures of Components.js</h1>
+        <h1 property="schema:name">The Adventures with Components.js</h1>
       </div>
       <div class="captiondata">
         <p class="author" rel="schema:author"><a href="https://www.rubensworks.net/#me">Ruben Taelman</a></p>
@@ -33,48 +33,137 @@
     </header>
 
     <section id="title" class="slide title" inlist="" rel="schema:hasPart" resource="#title">
-      <h2 property="schema:name">The Adventures of Components.js</h2>
+      <h2 property="schema:name">The Adventures<br \>with Components.js</h2>
       <ul class="author inline">
           <li class="current"><a href="https://www.rubensworks.net/">Ruben Taelman</a></li>
       </ul>
       <p class="affiliation"><a href="http://idlab.technology/">Ghent University – imec – IDLab, Belgium</a></p>
     </section>
 
-    <section id="start" class="slide" style="background-image: url('img/TODO.jpg')" inlist="" rel="schema:hasPart" resource="#start">
-        <h2 property="schema:name" class="big" style="margin-top: 20px; color: white; text-shadow: 2px 2px black">INTRO</h2>
-        <ul style="color: white; text-shadow: 2px 2px black; font-size: 1.3em">
-            <li>TODO</li>
+    <section id="start" class="slide" inlist="" rel="schema:hasPart" resource="#start">
+        <h2 property="schema:name" class="big">Story that spans nearly 5 years</h2>
+        <ul style="font-size: 1.3em">
+            <li>April 2017: Birth of the idea</li>
+            <li>January 2022: Acceptance of journal article</li>
+        </ul>
+        <em>Ruben Verborgh, Sarven Capadisli, Joachim Van Herwegen, Miel Vander Sande</em>
+    </section>
+    
+    <section id="what" class="slide" inlist="" rel="schema:hasPart" resource="#what">
+      <h2 property="schema:name">Components.js: semantic dependency injection framework</h2>
+      <pre>{
+  "@context": [...],
+  "@id": "urn:my-package:myInstance",
+  "@type": "QueryEngine",
+  "actors": [
+    { "@type": "SelectOperator" },
+    { "@type": "UnionOperator" },
+    { "@type": "ConstructOperator" },
+    ...
+  ]
+}</pre>
+      <h3>&rarr; Instantiation into JavaScript objects at runtime</h3>
+    </section>
+	
+    <section id="birth" class="slide" inlist="" rel="schema:hasPart" resource="#birth">
+        <h2 property="schema:name">April 2017: Birth of the idea</h2>
+        <ul>
+            <li>WWW Conference in Perth, Australia (April 3 - Apr 7)</li>
+            <li>Ruben V and I came up with idea of improving reproducibility of experiments</li>
+            <li>&rarr; unambiguous description of software and configuration</li>
+            <li><img src="img/initialcommit.png" alt="Initiual commit"></li>
+        </ul>
+    </section>
+    
+    <section id="sarven" class="slide" inlist="" rel="schema:hasPart" resource="#sarven">
+        <h2 property="schema:name">May 2017: Collaboration with Sarven</h2>
+        <ul>
+            <li>Beginning of May 2017, Sarven Capadisli visited us (in Technicum)</li>
+            <li>Setup of collaboration (Ruben V, Sarven, Joachim, Miel)</li>
+            <li>Goal: submit paper on vision and need for DI for ISWC 2017</li>
+            <li>Side-goal: do it all in HTML (start of ScholarMarkdown)</li>
+            <li><center><img src="img/ldn.png" alt="LDN rec" width="340px"></center></li>
+        </ul>
+    </section>
+    
+    <section id="workshop" class="slide" inlist="" rel="schema:hasPart" resource="#workshop">
+        <h2 property="schema:name">July 2017: Reject 1</h2>
+        <ul>
+            <li>ISWC 2017 submission (In-Use) was rejected</li>
+            <li>Reviewers clearly didn't read the paper properly</li>
+            <li>Alternative: SemSci workshop at ISWC 2017 (accepted)</li>
+            <li>Shortened version without Components.js</li>
+            <li><a href="https://linkedsoftwaredependencies.org/articles/describing-experiments/">https://linkedsoftwaredependencies.org/articles/describing-experiments/</a></li>
+            <li>Next target: ISWC 2018 resources track for Components.js</li>
+        </ul>
+    </section>
+    
+    <section id="iswc2018" class="slide" inlist="" rel="schema:hasPart" resource="#iswc2018">
+        <h2 property="schema:name">May 2018: Reject 2</h2>
+        <ul>
+            <li>More applied to real use case (Comunica)</li>
+            <li>ISWC 2018 submission (Resources) was rejected</li>
+            <li>Reviews were not negative, but also not positive. They didn't get the usefulness beyond Comunica.</li>
+            <li>(Comunica did get accepted that same year in the resources track)</li>
+        </ul>
+    </section>
+    
+    <section id="others" class="slide" inlist="" rel="schema:hasPart" resource="#others">
+        <h2 property="schema:name">2018 - 2021: The period we gave up...</h2>
+        <ul>
+            <li>Thinking about other venues (software engineering, ...)</li>
+            <li>Did not find anything suitable</li>
+        </ul>
+    </section>
+    
+    <section id="final" class="slide" inlist="" rel="schema:hasPart" resource="#final">
+        <h2 property="schema:name">2021: Let's try a journal</h2>
+        <ul>
+            <li>Advantages of journal: multiple review rounds</li>
+            <li>By then we had more concrete proof of usage for Components.js</li>
+            <li>Target: Semantic Web Journal as systems paper</li>
+        </ul>
+    </section>
+    
+    <section id="final" class="slide" inlist="" rel="schema:hasPart" resource="#final">
+        <h2 property="schema:name">2021: Let's try a journal</h2>
+        <ul>
+            <li>Advantages of journal: multiple review rounds</li>
+            <li>By then we had more concrete proof of usage for Components.js</li>
+            <li>Target: Semantic Web Journal as systems paper</li>
+        </ul>
+    </section>
+    
+    <section id="reviews1" class="slide" inlist="" rel="schema:hasPart" resource="#reviews1">
+        <h2 property="schema:name">October 2021: First review round</h2>
+        <ul>
+            <li>Minor revision: reviews were very positive!</li>
+        </ul>
+    </section>
+    
+    <section id="reviews2" class="slide" inlist="" rel="schema:hasPart" resource="#reviews2">
+        <h2 property="schema:name">January 2022: Second review round</h2>
+        <ul>
+            <li>Accept: no further comments</li>
         </ul>
     </section>
 	
-    <section id="index" class="slide index" inlist="" rel="schema:hasPart" resource="#index">
-      <ul>
-        <li><a href="#index-a">TODO</a></li>
-		<li><a href="#index-b">TODO</a></li>
-      </ul>
-    </section>
-    
-    <section id="index-a" class="slide index" inlist="" rel="schema:hasPart" resource="#index-a">
-      <ul>
-        <li class="current"><a href="#index-a">TODO</a></li>
-		<li><a href="#index-b">TODO</a></li>
-      </ul>
-    </section>
-	
-    <section id="some-slide" class="slide" inlist="" rel="schema:hasPart" resource="#some-slide">
-      <h2 property="schema:name">TODO: A regular slide</h2>
+    <section id="conclusion" class="slide" inlist="" rel="schema:hasPart" resource="#conclusion">
+      <h2 property="schema:name" class="big">Lessons learned</h2>
       <ul>
           <li>
-          	  <h3>A</h3>
-			  <span class="indent">TODO: Description</span>
+              <h3>Getting things published can take a long time</h3>
+              <span class="indent">Don't get demotivated by repeated rejections</span>
           </li>
-          <li>B</li>
-          <li>C</li>
+          <li>
+              <h3>Conferences are lotteries</h3>
+              <span class="indent">Multiple review rounds of journals are easier</span>
+          </li>
+          <li>
+              <h3>Resource/system articles need proof of usage</h3>
+              <span class="indent">One usage is insufficient</span>
+          </li>
       </ul>
-    </section>
-	
-    <section id="conclusion" class="slide" inlist="" rel="schema:hasPart" resource="#conclusion">
-      <h2 property="schema:name" class="big">TODO: Conclusion</h2>
     </section>
 
     <footer>
